@@ -22,9 +22,11 @@ function novoCorpo(nome,massa,x,y,r,cor,visivel=false,fixo=false,velo={ax:0,ay:0
     refletir(x,y,r,cor)
 }
 
-novoCorpo('Terra',50,0,0,100,'darkblue',false,true)
-novoCorpo('Lua1',10,0,200,20,'gray',false,false,{ax:0,ay:0,vx:10,vy:0})
-novoCorpo('Lua2',35,0,1300,20,'gray',false,false,{ax:0,ay:0,vx:-6,vy:0})
+novoCorpo('Sol',100,-1600,0,200,'orange',false,true,{ax:0,ay:0,vx:-1,vy:-2})
+novoCorpo('Terra',55,1200,0,70,'darkblue',false,true)
+
+novoCorpo('Lua1',10,1200,200,20,'gray',false,false,{ax:0,ay:0,vx:10,vy:0})
+novoCorpo('Lua2',40,1200,1000,20,'gray',false,false,{ax:0,ay:0,vx:-6,vy:0})
 
 simular()
 
